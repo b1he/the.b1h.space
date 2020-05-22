@@ -1,0 +1,31 @@
+body  {
+  transition: 0.5s;
+  background-image: url("/bg2.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+body[theme=dark] {
+  background-image: url("/bg1.jpg");
+}
+header {
+  transition: 0.5s;
+  background: rgba(204, 241, 255, 0.8);
+  -webkit-backdrop-filter: saturate(200%) blur(10px);
+  backdrop-filter: saturate(200%) blur(10px);
+}
+[theme=dark] header{
+  background: rgba(7, 37, 48, 0.8);
+}
+#header-mobile .header-container .menu {
+  transition: 0.5s;
+  background: rgba(204, 241, 255, 0.8);
+}
+[theme=dark] #header-mobile .header-container .menu {
+  background: rgba(7, 37, 48, 0.8);
+}
+.home[posts] .summary .content {
+  color: #161209;
+}
+.single .post-meta {
+  color: #5d5d5f;
+}
