@@ -8,12 +8,16 @@ title = "the B1H space"
 # Change the default theme to be use when building the site with Hugo
 theme = "LoveIt"
 
-#date format
-dateFormat = "01/02/2006"
-
 [params]
   # LoveIt theme version
   version = "0.2.X"
+  #date format
+  dateFormat = "02/01/2006"
+
+  # site default theme ("light", "dark", "auto")
+  defaultTheme = "dark"
+  # public git repo url only then enableGitInfo is true
+  gitRepo = "https://github.com/b1he/the.b1h.space"
 
 [menu]
   [[menu.main]]
@@ -71,6 +75,24 @@ dateFormat = "01/02/2006"
     copyright = false
     author = false
     since = 2019
+
+  # LoveIt NEW | 0.2.0 Section (all posts) page config
+  [params.section]
+    # special amount of posts in each section page
+    paginate = 20
+    # date format (month and day)
+    dateFormat = "02/01"
+    # amount of RSS pages
+    rss = 10
+
+  # LoveIt NEW | 0.2.0 List (category or tag) page config
+  [params.list]
+    # special amount of posts in each list page
+    paginate = 20
+    # date format (month and day)
+    dateFormat = "02/01"
+    # amount of RSS pages
+    rss = 10
 
 # Sitemap config
 [sitemap]
